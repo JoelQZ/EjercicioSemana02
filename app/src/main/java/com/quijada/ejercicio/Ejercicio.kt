@@ -20,4 +20,18 @@ fun main(){
         val credito = readln().toInt()
         creditos.add(credito)
     }
+    val totalCreditos = creditos.sum()
+    val costoTotal = totalCreditos * precio
+
+    val condicion1 = when{
+        totalCreditos <= 12 -> "Forma de pago"
+        totalCreditos in 13..18 -> "Carga Completa"
+        else -> "Requeriiento autorizado"
+    }
+
+    val cuotas = if (costoTotal > 2500){
+        3 }
+    else {
+        2
+    }
 }
