@@ -34,4 +34,17 @@ fun main(){
     else {
         2
     }
+
+    println("estudiante: $nombre")
+    println("Curso - Creditos - Costo")
+    for (i in cursos.indices) {
+        val costoCurso = creditos[i] * precio
+        println("${cursos[i]} - ${creditos[i]} - $costoCurso")
+    }
+
+    println("cursos matriculados en total: ${cursos.size}")
+    println("total creditos: $totalCreditos")
+    println("total a pagar: $costoTotal")
+    println("carga academica: $condicion1")
+    println("forma de pago: $cuotas")
 }
